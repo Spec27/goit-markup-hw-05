@@ -110,6 +110,7 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--title-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -135,6 +136,7 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--primary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-nav .link:hover,
 .contact-nav .link:focus {
@@ -189,6 +191,8 @@ body {
   border: 1px solid #000000;
   text-shadow: 0px 4px 4px rgba(170, 99, 99, 0.25);
   border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), text-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button.primary {
   color: var(--primary-white-color);
@@ -352,6 +356,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: var(--primary-white-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover,
 .social-link:focus {
@@ -370,6 +375,7 @@ body {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* -------------CLIENT SECTION------------ */
@@ -415,11 +421,12 @@ body {
   width: 100%;
   height: 100%;
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-link:hover .client-icon,
 .client-link:focus .client-icon {
   fill: var(--accent-color);
-  border: 1px solid #2196f3;
+  border: 2px solid #2196f3;
 }
 
 /* --------ФУТЕР---------- */
@@ -465,6 +472,7 @@ body {
 }
 .footer-contact .address {
   color: var(--primary-white-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-contact .address:hover,
 .footer-contact .address:focus {
@@ -472,6 +480,7 @@ body {
 }
 .footer-contact .link {
   color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-contact .link:hover,
 .footer-contact .link:focus {
@@ -505,6 +514,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-list {
   display: flex;
@@ -572,6 +582,7 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--title-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-site-nav .link:hover,
 .portfolio-site-nav .link:focus {
@@ -597,6 +608,7 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--primary-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-contact-nav .link:hover,
 .portfolio-contact-nav .link:focus {
@@ -614,6 +626,8 @@ body {
   letter-spacing: 0.03em;
   border: transparent;
   border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-portfolio .secondary {
   color: var(--title-text-color);
@@ -634,11 +648,9 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
 .portfolio-button {
   display: flex;
   justify-content: center;
-
   margin-bottom: 50px;
 }
 .click {
@@ -676,6 +688,7 @@ body {
   box-sizing: border-box;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-list-element:nth-child(3n) {
   margin-right: 0;
@@ -769,6 +782,7 @@ body {
 }
 .portfolio-footer-contact .address {
   color: var(--primary-white-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-footer-contact .address:hover,
 .portfolio-footer-contact .address:focus {
@@ -776,6 +790,7 @@ body {
 }
 .portfolio-footer-contact .link {
   color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-footer-contact .link:hover,
 .portfolio-footer-contact .link:focus {
@@ -798,6 +813,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-social-list {
   display: flex;
