@@ -25,13 +25,13 @@
 
             <ul class="contact-nav list text">
                 <li class="contact-nav item">
-                    <a href="info@example.com" class="tel-link link"><svg class="contact-icon " width="16" height="12">
+                    <a href="mailto:info@example.com" class="mail-link link"><svg class="contact-icon " width="16"
+                            height="12">
                             <use href="./images/symbol-defs.svg#icon-envelope"></use>
                         </svg>info@example.com</a>
                 </li>
                 <li class="contact-nav item">
-                    <a href="tel:+380991111111" class="mail-link link"><svg class="contact-icon " width="10"
-                            height="16">
+                    <a href="tel:+380991111111" class="tel-link link"><svg class="contact-icon " width="10" height="16">
                             <use href="./images/symbol-defs.svg#icon-Vector"></use>
                         </svg>+38 099 111 11 11</a>
                 </li>
@@ -47,7 +47,7 @@
                 для вашего бизнеса
             </h1>
 
-            <button type="button" class="button primary">Заказать услугу</button>
+            <button type="button" class="button primary" data-modal-open>Заказать услугу</button>
         </section>
         <!--перечень-->
         <section class="section skr">
@@ -90,13 +90,22 @@
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="section-title-list list">
                     <li class="section-title-element">
-                        <img src="./images/1.jpg" alt=" набо текста на клавиатуре" width="370" />
+                        <div class="conteiner-work">
+                            <img src="./images/1.jpg" alt=" набо текста на клавиатуре" width="370" />
+                            <h3 class="section-title-work">Десктопные приложения</h3>
+                        </div>
                     </li>
                     <li class="section-title-element">
-                        <img src="./images/2.jpg" alt="рука с телефоном перед ноутбуком" width="370" />
+                        <div class="conteiner-work">
+                            <img src="./images/2.jpg" alt="рука с телефоном перед ноутбуком" width="370" />
+                            <h3 class="section-title-work">Мобильные приложения</h3>
+                        </div>
                     </li>
                     <li class="section-title-element">
-                        <img src="./images/3.jpg" alt="графический планшет в руке" width="370" />
+                        <div class="conteiner-work">
+                            <img src="./images/3.jpg" alt="графический планшет в руке" width="370" />
+                            <h3 class="section-title-work">Дизайнерские решения</h3>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -352,6 +361,15 @@
 
 
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal"><button type="button" class="close-btn" data-modal-close>
+                <svg class="modal-icon" width="30" height="30">
+                    <use href="./images/symbol-defs.svg#icon-vector"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
     </body>
 
 </html>
